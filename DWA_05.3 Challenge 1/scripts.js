@@ -13,7 +13,7 @@ form.addEventListener("submit", (event) => {
     } else if (dividend < 1 || divider < 1 ){
             result.innerText = "Division not performed. Invalid number provided. Try again."
         } else if (isNaN(dividend) || isNaN(divider) ){
-            result.innerText = "Something critical went wrong. Please reload the page."
+            document.body.innerHTML = "Something critical went wrong. Please reload the page."
         } else {
         result.innerText = Math.floor(dividend / divider);
     }
